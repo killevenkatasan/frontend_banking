@@ -7,9 +7,8 @@ import Navbar from './components/Navbar';
 import './App.css';
 
 function App() {
-  const [isAuthenticated, setIsAuthenticated] = useState(true);
-  const [user, setUser] = useState({ name: 'Admin User' });
-
+ const [isAuthenticated] = useState(false);
+const [user] = useState(null);
   return (
     <Router>
       <div className="App">
